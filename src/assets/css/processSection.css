@@ -1,0 +1,33 @@
+.processSection {
+  width: 100%;
+  height: 100%;
+  margin: 3em 0em;
+}
+.processContainer {
+  width: 50%;
+  height: 100%;
+}
+#learnAbout {
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  -o-transition: 600ms ease;
+  -moz-transition: 600ms ease;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  cursor: pointer;
+}
+#learnAbout:hover {
+  color: black;
+  background-color: var(--bright);
+  border: 2px solid var(--bright);
+  -o-transition: 600ms ease;
+  -moz-transition: 600ms ease;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+#learnAbout h6 {
+  font-family: var(--brand-font);
+  padding: 10px;
+  font-weight: 300;
+}
