@@ -3,7 +3,9 @@
     height: 100vh;
     background-color: var(--primary);
 }
-
+.aboutSection button {
+    margin-top: 1em;
+}
 .aboutSection p{
     width: 65%;
 }

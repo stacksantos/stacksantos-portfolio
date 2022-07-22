@@ -1,9 +1,8 @@
-#contactBtn {
+.contactBtn {
   font-size: 1.3rem;
   font-family: var(--jetbrains);
   min-width: 5rem;
   height: fit-content;
-  margin-top: 3rem;
   padding: 5px 10px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -16,20 +15,20 @@
   color: var(--light);
 }
 
-#contactBtn:hover {
+.contactBtn:hover {
   color: black;
   border: 2px solid var(--bright);
   background: var(--bright);
 }
 
 @media screen and (min-width: 480px) {
-    #contactBtn {
+    .contactBtn {
         font-size: 1.8em;
     }
     
 }
 @media screen and (min-width: 800px) {
-    #contactBtn {
+    .contactBtn {
         font-size: 2.1em;
     }
 }

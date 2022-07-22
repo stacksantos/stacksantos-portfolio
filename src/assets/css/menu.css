@@ -12,7 +12,7 @@
 }
 .menuIcon {
   font-size: 2.4em;
-  padding: .1em;
+  padding: 0.1em;
   z-index: 1;
   -o-transition: 600ms ease;
   -moz-transition: 600ms ease;
@@ -20,7 +20,7 @@
   transition: 600ms ease;
 }
 .menuIcon.menuOpen {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 .menuContainer {
   position: fixed;
@@ -38,7 +38,7 @@ nav {
 .menuLink {
   color: white;
   font-size: 2.5em;
-  margin: .7em 0em;
+  margin: 0.7em 0em;
   text-transform: uppercase;
   font-family: var(--brand-font);
   -o-transition: 600ms ease;
@@ -53,8 +53,9 @@ nav {
   -webkit-transition: 600ms ease;
   transition: 600ms ease;
 }
-
-
+#theProcessLink {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 412px) {
   .menuIcon {
@@ -77,47 +78,47 @@ nav {
 /* SLIDE IN */
 
 .slideIn {
-	-webkit-animation: slideIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slideIn 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  -webkit-animation: slideIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slideIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 @-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
     -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
 @keyframes slideIn {
   0% {
     -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
     -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
@@ -127,47 +128,47 @@ nav {
 /* SLIDE OUT */
 
 .slideOut {
-	-webkit-animation: slideOut 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
-	        animation: slideOut 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+  -webkit-animation: slideOut 0.45s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
+  animation: slideOut 0.45s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
 }
 
 @-webkit-keyframes slideOut {
   0% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2) scaleY(0.2);
     -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
 }
 @keyframes slideOut {
   0% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2) scaleY(0.2);
     -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
 }
