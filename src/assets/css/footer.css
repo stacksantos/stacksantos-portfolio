@@ -27,6 +27,13 @@ td {
   min-width: max-content;
   color: var(--bright);
 }
+td a {
+  color: var(--bright);
+}
+td a:hover {
+  color: var(--light);
+}
+
 .copyright {
   transform: translateY(7em);
 }

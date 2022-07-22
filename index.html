@@ -42,7 +42,17 @@
       </email>
       <menu>
         <container class="p-4 menu">
-          <i class="fa-solid fa-compass menuLink"></i>
+          <i class="fa-solid fa-bars menuIcon" id="menuIcon"></i>
+        </container>
+        <container class="menuContainer slideOut hidden" id="menuContainer">
+          <nav class="center">
+            <ul class="col">
+              <a href="#about"><li class="menuLink">About Me</li></a>
+              <a href="#projects"><li class="menuLink">Project/Work</li></a>
+              <a href="*"><li class="menuLink">The Process</li></a>
+              <a href="#contactMe"><li class="menuLink">Contact Me</li></a>
+            </ul>
+          </nav>
         </container>
       </menu>
     </header>
@@ -64,8 +74,8 @@
             <i class="fa-solid fa-sort-down fa-fade scrollDown"></i>
           </container>
         </section>
-        <section class="aboutSection center">
-          <container class="aboutContainer col align">
+        <section class="aboutSection center" id="about">
+          <container class="aboutContainer col align" >
             <h3 class="p-4">A little about me:</h3>
             <p id="usedTo" class="p-4">
               I used to work on cars & shoot portraits.
@@ -118,7 +128,7 @@
             </container>
           </container>
         </section>
-        <section class="projectsSection center">
+        <section class="projectsSection center" id="projects">
           <container class="projectsContainer col align p-4">
             <h5>Some of my work</h5>
             <container class="flex wrap justify">
@@ -147,15 +157,15 @@
             </section>
           </container>
         </section>
-        <section class="footerSection col align">
+        <section class="footerSection col align" id="contactMe">
           <container class="footerContainer col align p-4">
             <container class="flex wrap justify">
               <section class="footerColumn col align p-4">
                 <h6>Contact Inquiries</h6>
                 <p>
-                  I look forward to hearing about how I can help you with your
-                  next project. All inquiries will be returned at the earliest
-                  time possible.
+                  Looking forward to hearing about how I can help with your next
+                  project.<br /><br />
+                  I'll answer all inquiries as soon as humanly possible.
                 </p>
               </section>
               <section class="footerColumn col align p-4">
@@ -166,7 +176,7 @@
                   </tr>
                   <tr>
                     <th>Email</th>
-                    <td>stacksantos@proton.me</td>
+                    <td><a href="mailto:stacksantos.proton.me">stacksantos@proton.me</a></td>
                   </tr>
                   <tr>
                     <th>Phone</th>
