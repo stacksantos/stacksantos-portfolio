@@ -11,6 +11,7 @@
 .benefitsContainer h5 {
     text-align: center;
     margin-bottom: 2em;
+    padding-bottom: 1em;
     border-bottom: 2px solid white;
 }
 .benefitsItem {
