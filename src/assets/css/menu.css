@@ -31,6 +31,7 @@
   background-color: rgba(0, 0, 0, 0.945);
   z-index: 1;
   border-left: 3px solid var(--bright);
+  cursor: pointer;
 }
 nav {
   height: 80%;

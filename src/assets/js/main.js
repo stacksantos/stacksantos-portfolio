@@ -3,11 +3,14 @@ n = new Date();
 y = n.getFullYear();
 document.getElementById('date').innerHTML = y;
 
-//Menu Icon Open/Close
-//Menu Container slide In/Out
+/* -------------------------------------------------------------------------- */
+/*                                  THE MENU                                  */
+/* -------------------------------------------------------------------------- */
+
+// Menu Icon & Container
 
 const menuIcon = document.getElementById('menuIcon');
-const menuContainer = document.getElementById('menuContainer');
+
 menuIcon.addEventListener('mousedown', () => {
   menuIcon.classList.toggle('fa-bars');
   menuIcon.classList.toggle('fa-expand');
@@ -17,24 +20,32 @@ menuIcon.addEventListener('mousedown', () => {
     menuContainer.classList.toggle('slideIn');
   }, 200);
 });
+
+// Menu Container
+
+const menuContainer = document.getElementById('menuContainer');
+
 menuContainer.addEventListener('mousedown', () => {
+  menuContainer.classList.remove('hidden');
   setTimeout(() => {
     menuContainer.classList.toggle('slideOut');
     menuContainer.classList.toggle('slideIn');
   }, 200);
 });
 
-//MenuLink close menu
+// Menu Link
 
-const menuLink = document.querySelectorAll('.menuLink');
-menuLink.forEach((link) => {
-  link.addEventListener('mousedown', () => {
-    menuContainer.classList.toggle('slideOut');
-    menuContainer.classList.toggle('slideIn');
-  });
-});
+// const menuLink = document.querySelectorAll('.menuLink');
+// menuLink.forEach((link) => {
+//   link.addEventListener('mousedown', () => {
+//     menuContainer.classList.toggle('slideOut');
+//     menuContainer.classList.toggle('slideIn');
+//   });
+// });
 
-//theProcess open/close
+/* -------------------------------------------------------------------------- */
+/*                                 THE PROCESS                                */
+/* -------------------------------------------------------------------------- */
 
 const learnAbout = document.getElementById('learnAbout');
 const theProcess = document.getElementById('theProcess');
@@ -54,9 +65,11 @@ theProcess.addEventListener('mousedown', () => {
   }, 200);
 })
 theProcessLink.addEventListener('mousedown', () => {
+  
   setTimeout(() => {
-    menuContainer.classList.toggle('slideOut');
-    menuContainer.classList.toggle('slideIn');
+    menuContainer.classList.toggle('hidden');
+    menuContainer.classList.remove('slideOut');
+    menuContainer.classList.remove('slideIn');
   }, 200);
   setTimeout(() => {
     theProcess.classList.toggle('puffOut');
