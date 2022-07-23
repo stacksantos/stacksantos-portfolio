@@ -9,15 +9,18 @@
   -webkit-transition: 600ms ease;
   transition: 600ms ease;
   cursor: pointer;
+  transform: translate(8px, -5px);
 }
 .menuIcon {
-  font-size: 2.4em;
-  padding: 0.1em;
+  font-size: 2em;
+  padding: 0.2em;
   z-index: 1;
   -o-transition: 600ms ease;
   -moz-transition: 600ms ease;
   -webkit-transition: 600ms ease;
   transition: 600ms ease;
+  background-color: rgba(0, 0, 0, 0.123);
+  border-radius: 10px;
 }
 .menuIcon.menuOpen {
   color: var(--secondary);
@@ -38,8 +41,10 @@ nav {
 }
 .menuLink {
   color: white;
-  font-size: 2.5em;
-  margin: 0.7em 0em;
+  font-size: 2.2em;
+  margin: 0.3em 0em;
+  padding: .4em;
+  border-left: 2px solid white;
   text-transform: uppercase;
   font-family: var(--brand-font);
   -o-transition: 600ms ease;
@@ -48,7 +53,9 @@ nav {
   transition: 600ms ease;
 }
 .menuLink:hover {
-  color: var(--bright);
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-left: 2px solid var(--bright);
   -o-transition: 600ms ease;
   -moz-transition: 600ms ease;
   -webkit-transition: 600ms ease;
@@ -59,16 +66,12 @@ nav {
 }
 
 @media screen and (min-width: 412px) {
-  .menuIcon {
-    font-size: 3em;
-  }
+  
 }
 @media screen and (min-width: 800px) {
-  .menuIcon {
-    font-size: 3.2em;
-  }
+ 
   .menuLink {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 

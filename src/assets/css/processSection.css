@@ -11,7 +11,7 @@
 #learnAbout {
   height: 100%;
   text-align: center;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   -o-transition: 600ms ease;
   -moz-transition: 600ms ease;
   -webkit-transition: 600ms ease;
@@ -39,7 +39,7 @@
   position: fixed;
   bottom: 60px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.911);
+  background-color: rgba(0, 0, 0, 0.959);
   color: white;
   /* transform: translate(-50%, -50%); */
   border-radius: 25px;
@@ -56,12 +56,12 @@
 .theProcess li {
   font-size: 1em;
   margin: 1em 0em;
-  color: var(--bright);
   font-family: var(--brand-font);
+  font-weight: 300;
 }
 .theProcess li span {
   font-size: 1.2em;
-  color: var(--light);
+  color: var(--bright);
   font-weight: 800;
 }
 .theProcess button {
@@ -78,7 +78,7 @@
     left: 70px;
   }
   .theProcess li {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 1.2em 0em;
   }
     .theProcess button {

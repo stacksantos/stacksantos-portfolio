@@ -12,7 +12,7 @@ document.getElementById('date').innerHTML = y;
 const menuIcon = document.getElementById('menuIcon');
 
 menuIcon.addEventListener('mousedown', () => {
-  menuIcon.classList.toggle('fa-bars');
+  menuIcon.classList.toggle('fa-ellipsis');
   menuIcon.classList.toggle('fa-expand');
   menuContainer.classList.remove('hidden');
   setTimeout(() => {
@@ -28,6 +28,8 @@ const menuContainer = document.getElementById('menuContainer');
 menuContainer.addEventListener('mousedown', () => {
   menuContainer.classList.remove('hidden');
   setTimeout(() => {
+    menuIcon.classList.toggle('fa-ellipsis');
+    menuIcon.classList.toggle('fa-expand');
     menuContainer.classList.toggle('slideOut');
     menuContainer.classList.toggle('slideIn');
   }, 200);
@@ -49,12 +51,12 @@ menuContainer.addEventListener('mousedown', () => {
 
 const learnAbout = document.getElementById('learnAbout');
 const theProcess = document.getElementById('theProcess');
-const theProcessLink = document.getElementById('theProcessLink')
+const theProcessLink = document.getElementById('theProcessLink');
 learnAbout.addEventListener('mousedown', () => {
   setTimeout(() => {
     theProcess.classList.toggle('puffOut');
     theProcess.classList.toggle('puffIn');
-    theProcess.classList.toggle('hidden')
+    theProcess.classList.toggle('hidden');
   }, 200);
 });
 theProcess.addEventListener('mousedown', () => {
@@ -63,17 +65,12 @@ theProcess.addEventListener('mousedown', () => {
     theProcess.classList.toggle('puffIn');
     theProcess.classList.toggle('hidden');
   }, 200);
-})
+});
 theProcessLink.addEventListener('mousedown', () => {
-  
-  setTimeout(() => {
-    menuContainer.classList.toggle('hidden');
-    menuContainer.classList.remove('slideOut');
-    menuContainer.classList.remove('slideIn');
-  }, 200);
   setTimeout(() => {
     theProcess.classList.toggle('puffOut');
     theProcess.classList.toggle('puffIn');
     theProcess.classList.toggle('hidden');
   }, 400);
-})
+});
+
