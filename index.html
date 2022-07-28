@@ -32,9 +32,13 @@
             <container class="col">
               <ul class="col">
                 <a href="#about"><li class="menuLink align">About Me</li></a>
-                <a href="#projects"><li class="menuLink align">Projects/Work</li></a>
+                <a href="#projects"
+                  ><li class="menuLink align">Projects/Work</li></a
+                >
                 <li class="menuLink align" id="theProcessLink">The Process</li>
-                <a href="#contactMe"><li class="menuLink align">Contact Me</li></a>
+                <a href="#contactMe"
+                  ><li class="menuLink align">Contact Me</li></a
+                >
               </ul>
               <socials>
                 <container class="socials end">
@@ -85,8 +89,8 @@
               code every day, and <strong>I've never been happier.</strong>
             </p>
             <p id="speaking">
-              Speaking of which, I'd love to hear what projects you have
-              in mind!
+              Speaking of which, I'd love to hear what projects you have in
+              mind!
             </p>
             <a href="mailto:stacksantos@proton.me"
               ><button class="contactBtn">Get In Touch</button></a
@@ -125,19 +129,31 @@
           </container>
         </section>
         <section class="projectsSection center" id="projects">
-          <container class="projectsContainer col align p-4">
+          <container class="projectsContainer col align">
             <h5>Some of my work</h5>
-            <container class="flex wrap justify">
-              <section class="projectsItem col align p-4">
+            <container class="flex wrap justify projectsItemContainer">
+              <section class="projectsItem col align">
                 <h6>Lumiere Salon</h6>
                 <a href="https://lumiere-salon.netlify.app/" target="_blank"
                   ><img
-                    src="./src/img/thumbnails/lumiere-thumbnail.png"
+                    src="./src/img/thumbnails/lumiere-thumbnail.webp"
                     alt="lumiere salon"
-                /></a>
+                  />
+                </a>
                 <p>
                   A fully responsive website featuring a Salon and the services
                   they provide.
+                </p>
+              </section>
+              <section class="projectsItem col align">
+                <h6>Green Dragon Craftz</h6>
+                <a href="https://greendragoncraftz.netlify.app/" target="_blank"
+                  ><img
+                    src="./src/img/thumbnails/gdc-thumbnail.webp"
+                    alt="green dragon craftz store"
+                /></a>
+                <p>
+                  A one-page store featuring large responsive sections to showcase products.
                 </p>
               </section>
             </container>
@@ -218,8 +234,7 @@
               </section>
             </container>
             <section class="copyright flex align">
-              Built by
-              &copy;
+              Built by &copy;
               <img
                 src="./src/img/logo/default-monochrome.svg"
                 alt="stackSantos"
