@@ -71,6 +71,6 @@ theProcessLink.addEventListener('mousedown', () => {
     theProcess.classList.toggle('puffOut');
     theProcess.classList.toggle('puffIn');
     theProcess.classList.toggle('hidden');
-  }, 400);
+  }, 800);
 });
 
