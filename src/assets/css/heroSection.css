@@ -17,9 +17,11 @@
     color: var(--bright);
     font-family: var(--brand-font)
 }
+.scrollToContinue {
+    margin-top: 2em;
+}
 .scrollDown {
     font-size: 1.3em;
-    margin-top: 1em;
 }
 .heroContainer {
     transform: translateY(-40px);
