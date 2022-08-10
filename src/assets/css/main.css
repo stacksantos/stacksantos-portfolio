@@ -966,7 +966,6 @@ td a:hover {
 }
 
 .heroSection img {
-    width: 65%;
     max-width: 300px;
     border: 2px solid white;
     border-radius: 50%;
@@ -998,7 +997,8 @@ td a:hover {
 }
 @media screen and (min-width: 800px) {
     .heroSection img {
-        margin-bottom: 1.6em;;
+        margin-bottom: 1.6em;
+        min-width: 400px;
     }
 }
 
