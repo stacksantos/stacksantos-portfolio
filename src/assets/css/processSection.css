@@ -1,0 +1,180 @@
+.processSection {
+  width: 100%;
+  height: 20vh;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+.processContainer {
+  width: 50%;
+  height: 100%;
+}
+#learnAbout {
+  height: 100%;
+  text-align: center;
+  /* border: 2px solid white; */
+  -o-transition: 600ms ease;
+  -moz-transition: 600ms ease;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  cursor: pointer;
+}
+#learnAbout:hover {
+  color: black;
+  background-color: var(--bright);
+  border: 2px solid var(--bright);
+  -o-transition: 600ms ease;
+  -moz-transition: 600ms ease;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+#learnAbout h6 {
+  font-family: var(--brand-font);
+  padding: 10px;
+  font-weight: 300;
+}
+
+.theProcess {
+  height: 80%;
+  width: 90%;
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.959);
+  color: white;
+  /* transform: translate(-50%, -50%); */
+  border-radius: 25px;
+
+}
+.theProcessContainer {
+  height: 100%;
+  width: 100%;
+}
+.theProcess ol {
+  width: 80%;
+  height: 80%;
+}
+.theProcess li {
+  font-size: 1em;
+  margin: .4em 0em;
+  font-family: var(--brand-font);
+  font-weight: 300;
+}
+.theProcess li span {
+  font-size: 1.2em;
+  color: var(--bright);
+  font-weight: 800;
+}
+.theProcess button {
+  margin-bottom: .4em;
+  margin-top: .6em;
+}
+
+@media screen and (min-width: 480px) {
+    .theProcess button {
+        margin-top: 1em;
+    }
+}
+@media screen and (min-width: 800px) {
+  .theProcess {
+    left: 70px;
+  }
+  .theProcess li {
+    font-size: 1.2em;
+    margin: 1.2em 0em;
+  }
+    .theProcess button {
+        margin-top: 1em;
+    }
+}
+@media screen and (min-width:1200px) {
+  .theProcess li {
+    font-size: 1.6em;
+    min-width: max-content;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ANIMATIONS                                 */
+/* -------------------------------------------------------------------------- */
+
+/* puff in */
+
+.puffIn {
+	-webkit-animation: puffIn 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puffIn 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puffIn {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puffIn {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* puff out */
+
+.puffOut {
+	-webkit-animation: puffOut 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: puffOut 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@-webkit-keyframes puffOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
+@keyframes puffOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
