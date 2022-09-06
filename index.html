@@ -1,258 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/assets/css/main.css" />
-    <script src="./src/assets/js/main.js" defer></script> 
-    <title>stackSantos Portfolio</title>
-  </head>
-  <body id="home">
-    <header>
-      <logo>
-        <container class="logo p-4">
-          <a href="#home"
-            ><img src="./src/img/logo/logo-small.png" alt="stack santos"
-          /></a>
-        </container>
-      </logo>
-      <email>
-        <container class="email">
-          <a href="mailto:stacksantos@proton.me"
-            ><i class="fa-solid fa-square-envelope emailLink"></i
-          ></a>
-        </container>
-      </email>
-      <menu>
-        <container class="p-4 menu">
-          <i class="fa-solid fa-ellipsis menuIcon" id="menuIcon"></i>
-        </container>
-        <container class="menuContainer slideOut hidden" id="menuContainer">
-          <nav class="center">
-            <container class="col">
-              <ul class="col">
-                <a href="#about"><li class="menuLink align">About Me</li></a>
-                <a href="#projects"
-                  ><li class="menuLink align">Projects/Work</li></a
-                >
-                <li class="menuLink align" id="theProcessLink">The Process</li>
-                <a href="https://blog.stacksantos.dev/"><li class="menuLink align" id="blog">Blog</li></a>
-                <a href="#contactMe"
-                  ><li class="menuLink align">Contact Me</li></a
-                >
-              </ul>
-              <socials>
-                <container class="socials end">
-                  <ul class="flex">
-                    <a href="https://twitter.com/stacksantos" target="_blank"
-                      ><i class="fa-brands fa-twitter-square socialLink"></i
-                    ></a>
-                    <a href="https://github.com/stacksantos" target="_blank"
-                      ><i class="fa-brands fa-github-square socialLink"></i
-                    ></a>
-                    <a
-                      href="https://www.linkedin.com/in/christopherleesantos/"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin socialLink"></i
-                    ></a>
-                  </ul>
-                </container>
-              </socials>
-            </container>
-          </nav>
-        </container>
-      </menu>
-    </header>
-    <main>
-      <main-content>
-        <section class="heroSection center">
-          <container class="col align around heroContainer">
-            <img src="./src/img/profile pic.webp" alt="Lee Santos" />
-            <h2>Hello There</h2>
-            <p id="heroText">
-              My name is Lee and I'm a Rhode Island based Software Engineer
-            </p>
-            <span class="scrollToContinue">scroll to continue</span>
-            <i class="fa-solid fa-sort-down fa-fade scrollDown"></i>
-          </container>
-        </section>
-        <section class="aboutSection center" id="about">
-          <container class="aboutContainer col align">
-            <h3 class="p-4">A little about me:</h3>
-            <p id="usedTo" class="p-4">
-              I used to work on cars & shoot portraits.
-            </p>
-            <p>
-              Over the years (and too many injuries) I decided it was time to
-              pursue a different career.
-            </p>
-            <p id="developing" class="p-4">
-              Developing lets me continue to tinker and create. I get to write
-              code every day, and <strong>I've never been happier.</strong>
-            </p>
-            <p id="speaking">
-              Speaking of which, I'd love to hear what projects you have in
-              mind!
-            </p>
-            <a href="mailto:stacksantos@proton.me"
-              ><button class="contactBtn">Get In Touch</button></a
-            >
-          </container>
-        </section>
-        <section class="benefitsSection center">
-          <container class="benefitsContainer col align p-4">
-            <h5>The benefits of my websites</h5>
-            <container class="flex wrap justify">
-              <section class="benefitsItem col align p-4">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h4>Always Responsive</h4>
-                <p>
-                  Whether it's a phone, tablet, or PC, your website will adapt
-                  to any screen size.
-                </p>
-              </section>
-              <section class="benefitsItem col align p-4">
-                <i class="fa-solid fa-circle-nodes"></i>
-                <h4>Modern Design</h4>
-                <p>
-                  The web has changed a lot since the dark ages. Don't miss out
-                  on all the new technologies available.
-                </p>
-              </section>
-              <section class="benefitsItem col align p-4">
-                <i class="fa-solid fa-bullseye"></i>
-                <h4>More Traffic</h4>
-                <p>
-                  A properly built website will generate more views, which
-                  translates to more business for you!
-                </p>
-              </section>
-            </container>
-          </container>
-        </section>
-        <section class="projectsSection center" id="projects">
-          <container class="projectsContainer col align">
-            <h5>Some of my work</h5>
-            <container class="flex wrap justify projectsItemContainer">
-              <section class="projectsItem col align">
-                <h6>Lumiere Salon</h6>
-                <a href="https://lumiere-salon.netlify.app/" target="_blank"
-                  ><img
-                    src="./src/img/thumbnails/lumiere-thumbnail.webp"
-                    alt="lumiere salon"
-                  />
-                </a>
-                <p>
-                  A fully responsive website featuring a Salon and the services
-                  they provide.
-                </p>
-              </section>
-              <section class="projectsItem col align">
-                <h6>Green Dragon Craftz</h6>
-                <a href="https://greendragoncraftz.netlify.app/" target="_blank"
-                  ><img
-                    src="./src/img/thumbnails/gdc-thumbnail.webp"
-                    alt="green dragon craftz store"
-                /></a>
-                <p>
-                  A one-page store featuring large responsive sections to showcase products.
-                </p>
-              </section>
-            </container>
-          </container>
-        </section>
-        <section class="processSection">
-          <container class="processContainer">
-            <section id="learnAbout" class="center">
-              <h6>THE PROCESS</h6>
-            </section>
-            <section id="theProcess" class="theProcess hidden puffOut">
-              <container class="center theProcessContainer">
-                <container class="col align">
-                  <h6>How it works</h6>
-                  <ol>
-                    <li>
-                      We schedule a chat to talk about your needs and budget for
-                      the project.
-                    </li>
-                    <li>
-                      I'll create the proposal and contract then send it to you
-                      via email.
-                    </li>
-                    <li>
-                      You'll review everything and sign only when you are
-                      comfortable with all of the terms.
-                    </li>
-                    <li><span>LETS GET TO WORK!</span></li>
-                    <li>I'll stay in touch with any updates on the project.</li>
-                    <li>
-                      When finished, we'll review and go over any concerns you
-                      have.
-                    </li>
-                    <li>
-                      If everything looks A-Ok, you'll sumbit the payment and
-                      I'll deliver the project!
-                    </li>
-                  </ol>
-                  <a href="mailto:stacksantos@proton.me"
-                    ><button class="contactBtn">Get started</button></a
-                  >
-                  <p>Tap anywhere to close</p>
-                </container>
-              </container>
-            </section>
-          </container>
-        </section>
-        <section class="footerSection col align" id="contactMe">
-          <container class="footerContainer col align p-4">
-            <container class="flex wrap justify">
-              <section class="footerColumn col align p-4">
-                <h6>Contact Disclosure</h6>
-                <p>
-                  I look forward to hearing about how I can help with your next
-                  project.<br /><br />
-                  I'll answer all inquiries as soon as humanly possible!
-                </p>
-              </section>
-              <section class="footerColumn col align p-4">
-                <table>
-                  <tr>
-                    <th>Location</th>
-                    <td>Providence, Rhode Island</td>
-                  </tr>
-                  <tr>
-                    <th>Email</th>
-                    <td>
-                      <a href="mailto:stacksantos.proton.me"
-                        >stacksantos@proton.me</a
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Phone</th>
-                    <td>(401)-523-7672</td>
-                  </tr>
-                </table>
-              </section>
-            </container>
-            <section class="copyright flex align">
-              Built by &copy;
-              <img
-                src="./src/img/logo/default-monochrome.svg"
-                alt="stackSantos"
-                id="copyrightImage"
-              />
-              <p id="date"></p>
-            </section>
-          </container>
-        </section>
-      </main-content>
-    </main>
-    <script
-      src="https://kit.fontawesome.com/912f06f88e.js"
-      crossorigin="anonymous"
-      defer
-    ></script>   
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/assets/css/main.css" />
+		<script src="./src/assets/js/main.js" defer></script>
+		<title>stackSantos Portfolio</title>
+	</head>
+	<body id="home">
+		<header>
+			<logo>
+				<container class="logo p-4">
+					<a href="#home"
+						><img src="./src/img/logo/logo-small.png" alt="stack santos"
+					/></a>
+				</container>
+			</logo>
+			<email>
+				<container class="email">
+					<a href="mailto:stacksantos@proton.me"
+						><i class="fa-solid fa-square-envelope emailLink"></i
+					></a>
+				</container>
+			</email>
+			<menu>
+				<container class="p-4 menu">
+					<i class="fa-solid fa-ellipsis menuIcon" id="menuIcon"></i>
+				</container>
+				<container class="menuContainer slideOut hidden" id="menuContainer">
+					<nav class="center">
+						<container class="col">
+							<ul class="col">
+								<a href="#about"><li class="menuLink align">About Me</li></a>
+								<a href="#projects"
+									><li class="menuLink align">Projects/Work</li></a
+								>
+								<li class="menuLink align" id="theProcessLink">The Process</li>
+								<a href="https://blog.stacksantos.dev/"
+									><li class="menuLink align" id="blog">Blog</li></a
+								>
+								<a href="#contactMe"
+									><li class="menuLink align">Contact Me</li></a
+								>
+							</ul>
+							<socials>
+								<container class="socials end">
+									<ul class="flex">
+										<a href="https://twitter.com/stacksantos" target="_blank"
+											><i class="fa-brands fa-twitter-square socialLink"></i
+										></a>
+										<a href="https://github.com/stacksantos" target="_blank"
+											><i class="fa-brands fa-github-square socialLink"></i
+										></a>
+										<a
+											href="https://www.linkedin.com/in/christopherleesantos/"
+											target="_blank"
+											><i class="fa-brands fa-linkedin socialLink"></i
+										></a>
+									</ul>
+								</container>
+							</socials>
+						</container>
+					</nav>
+				</container>
+			</menu>
+		</header>
+		<main>
+			<main-content>
+				<section class="heroSection center">
+					<container class="col align around heroContainer">
+						<img src="./src/img/profile pic.webp" alt="Lee Santos" />
+						<h2>Hello There</h2>
+						<p id="heroText">
+							My name is Lee and I'm a Rhode Island based Software Engineer
+						</p>
+						<span class="scrollToContinue">scroll to continue</span>
+						<i class="fa-solid fa-sort-down fa-fade scrollDown"></i>
+					</container>
+				</section>
+				<section class="aboutSection center" id="about">
+					<container class="aboutContainer col align">
+						<h3 class="p-4">A little about me:</h3>
+						<p id="usedTo" class="p-4">
+							I used to work on cars & shoot portraits.
+						</p>
+						<p>
+							Over the years (and too many injuries) I decided it was time to
+							pursue a different career.
+						</p>
+						<p id="developing" class="p-4">
+							Developing lets me continue to tinker and create. I get to write
+							code every day, and <strong>I've never been happier.</strong>
+						</p>
+						<p id="speaking">
+							Speaking of which, I'd love to hear what projects you have in
+							mind!
+						</p>
+						<a href="mailto:stacksantos@proton.me"
+							><button class="contactBtn">Get In Touch</button></a
+						>
+					</container>
+				</section>
+				<section class="benefitsSection center">
+					<container class="benefitsContainer col align p-4">
+						<h5>The benefits of my work</h5>
+						<container class="flex wrap justify">
+							<section class="benefitsItem col align p-4">
+								<i class="fa-solid fa-mobile-screen-button"></i>
+								<h4>Always Responsive</h4>
+								<p>
+									Whether it's a phone, tablet, or PC, your website will adapt
+									to any screen size.
+								</p>
+							</section>
+							<section class="benefitsItem col align p-4">
+								<i class="fa-solid fa-circle-nodes"></i>
+								<h4>Modern Design</h4>
+								<p>
+									The web has changed a lot since the dark ages. Don't miss out
+									on all the new technologies available.
+								</p>
+							</section>
+							<section class="benefitsItem col align p-4">
+								<i class="fa-solid fa-bullseye"></i>
+								<h4>More Traffic</h4>
+								<p>
+									A properly built project will generate more views, which
+									translates to more business for you!
+								</p>
+							</section>
+						</container>
+					</container>
+				</section>
+				<section class="projectsSection flex wrap">
+					<!-- ----------------------------------------------------------------------- -->
+					<!--                        WEBSITE PROJECT CONTAINER                        -->
+					<!-- ----------------------------------------------------------------------- -->
+					<container class="projectsContainer col align">
+						<h5>Websites</h5>
+						<container class="flex wrap justify projectsItemContainer">
+							<section class="projectsItem col align">
+								<h6>Lumiere Salon</h6>
+								<a href="https://lumiere-salon.netlify.app/" target="_blank"
+									><img
+										src="./src/img/thumbnails/lumiere-thumbnail.webp"
+										alt="lumiere salon"
+									/>
+								</a>
+								<p class="desc">
+									A fully responsive website featuring a Salon and the services
+									they provide.
+								</p>
+								<span>Front End</span>
+								<p class="tech">HTML - CSS - Javascript</p>
+							</section>
+
+							<section class="projectsItem col align">
+								<h6>Green Dragon Craftz</h6>
+								<a href="https://greendragoncraftz.netlify.app/" target="_blank"
+									><img
+										src="./src/img/thumbnails/gdc-thumbnail.webp"
+										alt="green dragon craftz store"
+								/></a>
+								<p class="desc">
+									A one-page store featuring large responsive sections to
+									showcase products.
+								</p>
+								<span>Full Stack</span>
+								<p class="tech">React - Router - Passport</p>
+							</section>
+							<section class="projectsItem col align">
+								<h6>Level Ground</h6>
+								<a
+									href="https://level-ground-react.netlify.app/"
+									target="_blank"
+									><img
+										src="./src/img/thumbnails/level-ground-react.webp"
+										alt="level ground website"
+									/>
+								</a>
+								<p class="desc">
+									A responsive website built with React Js and Tailwind CSS
+									using Vite.
+								</p>
+								<span>Full Stack</span>
+								<p class="tech">React - Tailwind - Vite</p>
+							</section>
+							<section class="projectsItem col align">
+								<h6>Interactive CC Page</h6>
+								<a href="https://ss-interactive-cc.netlify.app/" target="_blank"
+									><img
+										src="./src/img/thumbnails/interactive-cc-page.webp"
+										alt="interactive credit card page"
+									/>
+								</a>
+								<p class="desc">
+									A responsive and interactive Credit Card form that updates in
+									real time.
+								</p>
+								<span>Front End</span>
+								<p class="tech">HTML - CSS - Javascript</p>
+							</section>
+						</container>
+					</container>
+					<!-- ----------------------------------------------------------------------- -->
+					<!--                            WEB APP CONTAINER                            -->
+					<!-- ----------------------------------------------------------------------- -->
+					<container class="projectsContainer col align">
+						<h5>Web Apps</h5>
+						<container class="flex wrap justify projectsItemContainer">
+							<section class="projectsItem col align">
+								<h6>Rock Paper Scissor</h6>
+								<a
+									href="https://stacksantos.github.io/rock-paper-scissors/"
+									target="_blank"
+									><img
+										src="./src/img/thumbnails/rps-screenshot.webp"
+										alt="rock paper scissors"
+									/>
+								</a>
+								<p class="desc">
+									A fun version of the classic game Rock,Paper,Scissors.
+								</p>
+								<span>Front End</span>
+								<p class="tech">HTML - CSS - Javascript</p>
+							</section>
+							<section class="projectsItem col align">
+								<h6>Pocket Palindrome</h6>
+								<a
+									href="https://stacksantos.github.io/palindrome-checker-app/"
+									target="_blank"
+									><img
+										src="./src/img/thumbnails/palindrome-app.webp"
+										alt="pocket palindrome"
+									/>
+								</a>
+								<p class="desc">
+									Ever wonder if a word is also a Palindrome? Well now you can
+									find out with this neat little app. Built with HTML,CSS, and
+									Javascript only.
+								</p>
+								<span>Front End</span>
+								<p class="tech">HTML - CSS - Javascript</p>
+							</section>
+							<section class="projectsItem col align">
+								<h6>Interactive CC Page</h6>
+								<a
+									href="https://stacksantos.github.io/whack-a-mole/"
+									target="_blank"
+									><img
+										src="./src/img/thumbnails/whack-a-mole-screenshot.webp"
+										alt="interactive credit card page"
+									/>
+								</a>
+								<p class="desc">
+									A cool version of the Whack-a-mole game you can play anywhere.
+								</p>
+								<span>Front End</span>
+								<p class="tech">HTML - CSS - Javascript</p>
+							</section>
+						</container>
+					</container>
+					<!-- ----------------------------------------------------------------------- -->
+					<!--                           WORKING ON SECTION                            -->
+					<!-- ----------------------------------------------------------------------- -->
+					<container class="projectsContainer col align">
+						<h5>Currently Working on</h5>
+						<container class="flex wrap justify projectsItemContainer">
+							<section class="projectsItem col align">
+								<h6>Gear Wish</h6>
+								<a
+									href="https://stacksantos.github.io/rock-paper-scissors/"
+									target="_blank"
+									><img
+										src="./src/img/thumbnails/gear-wish-screenshot.webp"
+										alt="rock paper scissors"
+									/>
+								</a>
+								<p class="desc">
+									A musicians best friend.  Post your gear wishlist and match with others in your area that have what you need!
+								</p>
+								<span>Full Stack</span>
+								<p class="tech text-center">Node - Express - Tailwind - Mongo DB - Passport - EJS - Etc.</p>
+							</section>
+						</container>
+					</container>
+				</section>
+				<!-- ----------------------------------------------------------------------- -->
+				<!--                             PROCESS SECTION                             -->
+				<!-- ----------------------------------------------------------------------- -->
+				<section class="processSection">
+					<container class="processContainer">
+						<section id="learnAbout" class="center">
+							<h6>THE PROCESS</h6>
+						</section>
+						<section id="theProcess" class="theProcess hidden puffOut">
+							<container class="center theProcessContainer">
+								<container class="col align">
+									<h6>How it works</h6>
+									<ol>
+										<li>
+											We schedule a chat to talk about your needs and budget for
+											the project.
+										</li>
+										<li>
+											I'll create the proposal and contract then send it to you
+											via email.
+										</li>
+										<li>
+											You'll review everything and sign only when you are
+											comfortable with all of the terms.
+										</li>
+										<li><span>LETS GET TO WORK!</span></li>
+										<li>I'll stay in touch with any updates on the project.</li>
+										<li>
+											When finished, we'll review and go over any concerns you
+											have.
+										</li>
+										<li>
+											If everything looks A-Ok, you'll sumbit the payment and
+											I'll deliver the project!
+										</li>
+									</ol>
+									<a href="mailto:stacksantos@proton.me"
+										><button class="contactBtn">Get started</button></a
+									>
+									<p>Tap anywhere to close</p>
+								</container>
+							</container>
+						</section>
+					</container>
+				</section>
+				<section class="footerSection col align" id="contactMe">
+					<container class="footerContainer col align p-4">
+						<container class="flex wrap justify">
+							<section class="footerColumn col align p-4">
+								<h6>Contact Disclosure</h6>
+								<p>
+									I look forward to hearing about how I can help with your next
+									project.<br /><br />
+									I'll answer all inquiries as soon as humanly possible!
+								</p>
+							</section>
+							<section class="footerColumn col align p-4">
+								<table>
+									<tr>
+										<th>Location</th>
+										<td>Providence, Rhode Island</td>
+									</tr>
+									<tr>
+										<th>Email</th>
+										<td>
+											<a href="mailto:stacksantos.proton.me"
+												>stacksantos@proton.me</a
+											>
+										</td>
+									</tr>
+									<tr>
+										<th>Phone</th>
+										<td>(401)-523-7672</td>
+									</tr>
+								</table>
+							</section>
+						</container>
+						<section class="copyright flex align">
+							Built by &copy;
+							<img
+								src="./src/img/logo/default-monochrome.svg"
+								alt="stackSantos"
+								id="copyrightImage"
+							/>
+							<p id="date"></p>
+						</section>
+					</container>
+				</section>
+			</main-content>
+		</main>
+		<script
+			src="https://kit.fontawesome.com/912f06f88e.js"
+			crossorigin="anonymous"
+			defer
+		></script>
+	</body>
 </html>
