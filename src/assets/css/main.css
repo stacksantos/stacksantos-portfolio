@@ -85,7 +85,8 @@
   --bright-2: #ffbf3e;
   --primary: #003d5c;
   --secondary: #ffa600;
-  --faded: #000000ec;
+  --faded: rgb(0,0,0,.4);
+  --faded-blue: rgb(20,50,80,.1);
 }
 /* -------------------------------------------------------------------------- */
 
@@ -100,7 +101,10 @@ body {
   line-height: 1.5em;
   font-weight: 400;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+}
+.snap {
+  scroll-snap-type: y mandatory;
 }
 
 * [data-button] {
