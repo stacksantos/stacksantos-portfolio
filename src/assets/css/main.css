@@ -101,10 +101,7 @@ body {
   line-height: 1.5em;
   font-weight: 400;
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
-}
-.snap {
-  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 * [data-button] {
