@@ -1,3 +1,3 @@
-# stacksantos-portfolio
+# My Personal Portfolio
 
-View at https://stacksantos.dev
+Check me out at https://stacksantos.dev . 
